@@ -41,11 +41,18 @@ function mostrarData() {
     //Id de la section donde se mostrarán los datos "clientes"
     var contenedor = document.getElementById('clientes');
     var contenido = '';
-    // console.log(nombre);
-    // console.log(apellido);
-    // console.log(email);
-    // console.log(direccion);
-    // console.log(telefono);
-    // console.log(select);
-    // console.log(test5);
+    clientesTeteria.forEach(function(persona) {
+        contenido += '<div>' +
+            '<div><h4>' + 'Datos del cliente' + '</h4></div>' +
+            'Nombre: ' + persona.nombre + ' ' + persona.apellido + '<br>' +
+            'Email: ' + persona.email + '<br>' +
+            'Dirección: ' + persona.direccion + '<br>' +
+            'Teléfono: ' + persona.telefono + '<br>' +
+            'Producto a elección: ' + persona.select + '<br>' +
+            'Recibir información: ' + persona.test5 +
+            '</div>'
+    });
+
+    contenedor.innerHTML = contenido;
+
 }
