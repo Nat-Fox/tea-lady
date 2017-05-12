@@ -38,21 +38,25 @@ function mostrarData() {
     clientesTeteria.push(persona);
     console.log(clientesTeteria);
 
-    //Id de la section donde se mostrarán los datos "clientes"
-    var contenedor = document.getElementById('clientes');
-    var contenido = '';
-    clientesTeteria.forEach(function(persona) {
-        contenido += '<div>' +
-            '<div><h4>' + 'Datos del cliente' + '</h4></div>' +
-            'Nombre: ' + persona.nombre + ' ' + persona.apellido + '<br>' +
-            'Email: ' + persona.email + '<br>' +
-            'Dirección: ' + persona.direccion + '<br>' +
-            'Teléfono: ' + persona.telefono + '<br>' +
-            'Producto a elección: ' + persona.select + '<br>' +
-            'Recibir información: ' + persona.test5 +
-            '</div>'
-    });
+    if (nombre === '' || apellido === '' || email === '' || direccion === '' || telefono === '') {
+        alert('No puedes dejar campos vacios');
+    } else {
+        //Id de la section donde se mostrarán los datos "clientes"
+        var contenedor = document.getElementById('clientes');
+        var contenido = '';
+        clientesTeteria.forEach(function(persona) {
+            contenido += '<div class="datos-cliente">' +
+                '<div><h4>' + 'Datos del cliente' + '</h4></div>' +
+                'Nombre: ' + persona.nombre + ' ' + persona.apellido + '<br>' +
+                'Email: ' + persona.email + '<br>' +
+                'Dirección: ' + persona.direccion + '<br>' +
+                'Teléfono: ' + persona.telefono + '<br>' +
+                'Producto a elección: ' + persona.select + '<br>' +
+                'Recibir información: ' + persona.test5 +
+                '</div>'
+        });
 
-    contenedor.innerHTML = contenido;
+        contenedor.innerHTML = contenido;
+    }
 
 }
