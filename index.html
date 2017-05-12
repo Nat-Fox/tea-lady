@@ -1,46 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>Té como señora</title>
-	<link rel="stylesheet" href="css/main.css">
+    <meta charset="UTF-8">
+    <title>Té como señora</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-	<header>
-		<h1>Tetería Té como Señora</h1>
-	</header>
-	<section id="formulario">
-		<p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
-		<p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
-		<form action="">
-			<label for="Nombre Dueño"> Nombre:</label>
-			<input type="text">
-			<label for="Nombre mascota"> Apellido:</label>
-			<input type="text">
-			<label for="Email"> Correo Electrónico:</label> 
-			<input type="email">
-			<label for="Dirección">Dirección: </label>
-			<input type="text">
-			<label for="Teléfono">Teléfono:</label>
-			<input type="text">
-			<label for="">Selecciona un pack:</label>
-			<select name="" id="">
+    <header>
+        <h1>Tetería Té como Señora</h1>
+    </header>
+
+    <!--El primer section contiene el formulario que debemos validar con javascript. El formulario cuenta con un
+	button que posee un onclick. Al darle click al botón debe mostrar los datos ingresados en la seccion siguiente.-->
+
+    <section id="formulario">
+        <p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
+        <p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
+        <form action="">
+            <label for="Nombre Dueño"> Nombre:</label>
+            <input type="text">
+            <label for="Nombre mascota"> Apellido:</label>
+            <input type="text">
+            <label for="Email"> Correo Electrónico:</label>
+            <input type="email">
+            <label for="Dirección">Dirección: </label>
+            <input type="text">
+            <label for="Teléfono">Teléfono:</label>
+            <input type="text">
+            <label for="">Selecciona un pack:</label>
+            <select name="" id="">
 				<option value="">Escoje tu opción</option>
 				<option value="">Pack de té clásico (Té negro)</option>
 				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
 				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
 			</select>
-			<label for=""></label>
-			<input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
-			<button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
-		</form>
-	</section>
-	<section id="clientes">
-		<!-- Acá van los datos de ingresados por los clientes -->
-	</section>
-	<section id="productos">
-		<!-- Acá puedes crear lo que quieras-->
-	</section>
-	<script src="js/main.js"></script>
+            <label for=""></label>
+            <input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos
+            <button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
+        </form>
+    </section>
+
+    <!--la segunda section debe mostrar los datos ingresados en el formulario-->
+
+    <section id="clientes">
+        <!-- Acá van los datos de ingresados por los clientes -->
+    </section>
+
+    <!--la tercera section es de desarrollo libre puede mostrar productos o cualquier cosa relativa al te-->
+
+    <section id="productos">
+        <!-- Acá puedes crear lo que quieras-->
+    </section>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
