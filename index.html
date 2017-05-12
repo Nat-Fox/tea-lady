@@ -16,37 +16,71 @@
 
 <body>
     <header>
-        <h1>Tetería Té como Señora</h1>
+        <!--<h1>Tetería Té como Señora</h1>-->
     </header>
 
     <!--El primer section contiene el formulario que debemos validar con javascript. El formulario cuenta con un
 	button que posee un onclick. Al darle click al botón debe mostrar los datos ingresados en la seccion siguiente.-->
 
+
+
+
     <section id="formulario">
         <p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
         <p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
-        <form action="">
-            <label for="Nombre Dueño"> Nombre:</label>
-            <input type="text">
-            <label for="Nombre mascota"> Apellido:</label>
-            <input type="text"><br>
-            <label for="Email"> Correo Electrónico:</label>
-            <input type="email"><br>
-            <label for="Dirección">Dirección: </label>
-            <input type="text"><br>
-            <label for="Teléfono">Teléfono:</label>
-            <input type="text"><br>
-            <label for="">Selecciona un pack:</label>
-            <select name="" id="">
-				<option value="">Escoje tu opción</option>
-				<option value="">Pack de té clásico (Té negro)</option>
-				<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
-				<option value="">Pack variedades (Té verde, rojo y blanco)</option>
-			</select><br>
-            <label for=""></label>
-            <input type="checkbox"> Recibe nuestro newsletter mensual con actividades y sorteos <br>
-            <button type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
-        </form>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <input id="nombre" type="text" class="validate">
+                        <label for="Nombre Dueño">Nombre:</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="apellido" type="text" class="validate">
+                        <label for="Nombre mascota">Apellido:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="email" type="text" class="validate">
+                        <label for="Email">Correo Electrónico:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="direccion" type="text" class="validate">
+                        <label for="Dirección">Dirección:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="input-field col s12">
+                        <input id="telefono" type="text" class="validate">
+                        <label for="Teléfono">Teléfono:</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <label for="">Selecciona un pack:</label>
+                        <select>
+    					<option value="" disabled selected>Escoge tu opción</option>
+						<option value="">Pack de té clásico (Té negro)</option>
+						<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+						<option value="">Pack variedades (Té verde, rojo y blanco)</option>
+					</select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <p>
+                            <input type="checkbox" id="test5" />
+                            <label for="test5">Recibe nuestro newsletter mensual con actividades y sorteos</label>
+                        </p>
+                        <button class="waves-effect waves-light btn" type="submit" form="form1" value="Submit" onclick="mostrarData()">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
     </section>
 
     <!--la segunda section debe mostrar los datos ingresados en el formulario-->
@@ -59,6 +93,8 @@
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <!--Import js materialize-->
+    <script type="text/javascript" src="vendors/materialize/js/materialize.min.js"></script>
     <!--Import js-->
     <script src="js/main.js"></script>
 </body>
