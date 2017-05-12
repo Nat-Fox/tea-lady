@@ -1,1 +1,10 @@
-/* Escribe acá tus estilos*/
+/*Requerimientos:
+- usar al menos 3 selectores básicos y alguno de los avanzados
+- puntos extras por estilos*/
+
+
+/*fuente Roboto*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
