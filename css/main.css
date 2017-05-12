@@ -9,3 +9,14 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 40px;
 }
+
+h1 {
+    text-align: center;
+}
+
+.sra-potts {
+    background-image: url(http://vignette3.wikia.nocookie.net/kingdomhearts/images/2/25/Sra._Potts_KHX.png/revision/latest?cb=20151108144807&path-prefix=es);
+    background-size: 50px 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}

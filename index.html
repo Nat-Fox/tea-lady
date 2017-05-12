@@ -16,20 +16,22 @@
 
 <body>
     <header>
-        <!--<h1>Tetería Té como Señora</h1>-->
+        <h1>Tetería Té como Señora</h1>
     </header>
 
     <!--El primer section contiene el formulario que debemos validar con javascript. El formulario cuenta con un
 	button que posee un onclick. Al darle click al botón debe mostrar los datos ingresados en la seccion siguiente.-->
 
-
-
-
     <section id="formulario">
-        <p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
-        <p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
         <div class="row">
             <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <div class="sra-potts"></div>
+                        <p>Bienvenid@s a la Tetería Té como Señora. Ofrecemos los mejores tés del mercado a bajos precios, gracias a nuestro sistema de venta online y cajas del mes.</p>
+                        <p>Si deseas suscribirte a nuestra caja de té mensual, rellena tus datos en el formulario</p>
+                    </div>
+                </div>
                 <div class="row">
                     <div class="input-field col s6">
                         <input id="nombre" type="text" class="validate">
@@ -61,12 +63,12 @@
                 <div class="row">
                     <div class="col s12">
                         <label for="">Selecciona un pack:</label>
-                        <select>
-    					<option value="" disabled selected>Escoge tu opción</option>
-						<option value="">Pack de té clásico (Té negro)</option>
-						<option value="">Pack frutales (Hierbas y té con aromatizado con fruta</option>
-						<option value="">Pack variedades (Té verde, rojo y blanco)</option>
-					</select>
+                        <select id="select">
+							<option value="" disabled selected>Escoge tu opción</option>
+							<option value="Pack de té clásico (Té negro)">Pack de té clásico (Té negro)</option>
+							<option value="Pack frutales (Hierbas y té con aromatizado con fruta">Pack frutales (Hierbas y té con aromatizado con fruta</option>
+							<option value="Pack variedades(Té verde, rojo y blanco)">Pack variedades (Té verde, rojo y blanco)</option>
+						</select>
                     </div>
                 </div>
                 <div class="row">
@@ -80,11 +82,9 @@
                 </div>
             </form>
         </div>
-
     </section>
 
-    <!--la segunda section debe mostrar los datos ingresados en el formulario-->
-
+    <!--Aquí se mostrarán los datos ingresados en el formulario-->
     <section id="clientes"></section>
 
     <!--la tercera section es de desarrollo libre puede mostrar productos o cualquier cosa relativa al te-->
