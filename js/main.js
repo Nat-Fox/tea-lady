@@ -58,5 +58,13 @@ function mostrarData() {
 
         contenedor.innerHTML = contenido;
     }
-
 }
+
+//Muestra un producto en la tercera section
+function mostrarProducto() {
+    var productos = document.getElementById('productos');
+    var foto = '<div class="producto"><img src="img/te.jpg" alt=""><div>';
+    productos.innerHTML = foto;
+}
+
+mostrarProducto();

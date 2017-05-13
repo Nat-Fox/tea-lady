@@ -24,3 +24,11 @@ h1 {
 .datos-cliente {
     padding: 15px;
 }
+
+.tesito {
+    text-align: center;
+}
+
+.producto {
+    display: inline-block;
+}
